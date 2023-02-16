@@ -18,6 +18,11 @@ aside {
   align-items: center;
 }
 
+.side-button-containers {
+  display: flex;
+  flex-direction: column;
+}
+
 .content {
   width: 100%;
 }
@@ -31,7 +36,7 @@ aside {
   flex-direction: column;
 }
 
-.content-nav {
+.content-selection-buttons {
   margin: 20px;
 }
 
@@ -58,6 +63,15 @@ main {
   width: 300px;
 }
 
+.main-content-section {
+  display: flex;
+}
+
+.social-buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
 /* Images */
 
 img {
