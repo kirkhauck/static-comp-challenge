@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Comp Challenge</title>
-</head>
-<body>
-  <aside>
-    <header>
-      <img>
-      <button>
-    </header>
-    <nav></nav>
-    <nav></nav>
-    <nav></nav>
-  </aside>
-  <header>
-    <section>
-      <button></button>
-      <input type="text" placeholder="m. Search..." name="search">
-      <button></button>
-      <button></button>
-      <button></button>
-    </section>
-    <section>
-      <div>
-        <h1></h1>
-        <p></p>
-      </div>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-    </section>
-    <nav>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-    </nav>
-  </header>
-  <main>
-    <section></section>
-    <section>
-      <table></table>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ambopteryx</title>
+  </head>
+  <body>
+    <aside>
+      <header class="aside-header">
+        <img src="assets/ambopteryx-thumbnail.jpeg" alt="Ambopteryx">
+        <button class="profile-button">
+          Ambopteryx <span class="material-symbols-outlined">expand_more</span>
+        </button>
+      </header>
       <nav>
-        <button></button>
-        <button></button>
-        <button></button>
-        <section>
-          <p></p>
-          <div>
-            <input type="text" placeholder="hyperlink" name="hyperlink">
-            <button></button>
-          </div>
-          <div>
-            <input type="text" placeholder="script" name="hyperlink">
-            <button></button>
-          </div>
-          <div>
-            <input type="text" placeholder="email" name="hyperlink">
-          </div>
-        </section>
+        <h4>Main</h4>
+        <button>Home</button>
+        <button>Jobs</button>
+        <button>Resumes</button>
+        <button>Tasks</button>
+        <button>Calendar</button>
       </nav>
+      <nav>
+        <h4>Admin</h4>
+        <button>Users</button>
+        <button>Locations</button>
+        <button>Workflows</button>
+        <button>Job Boards</button>
+        <button>Social</button>
+      </nav>
+      <nav>
+        <h4>Categories</h4>
+        <input type="checkbox" id="theropods" name="theropods" value="theropods">
+        <label for="theropods"> Theropods</label>
+        <input type="checkbox" id="sauropods" name="sauropods" value="sauropods">
+        <label for="sauropods"> Sauropods</label>
+        <input type="checkbox" id="stegosaurs" name="stegosaurs" value="stegosaurs">
+        <label for="stegosaurs"> Stegosaurs</label>
+        <input type="checkbox" id="ankylosaurs" name="ankylosaurs" value="ankylosaurs">
+        <label for="ankylosaurs"> Ankylosurs</label>
+        <input type="checkbox" id="ornithopods" name="ornithopods" value="ornithopods">
+        <label for="ornithopods"> Ornithopods</label>
+        <input type="checkbox" id="ceratopsians" name="ceratopsians" value="ceratopsians">
+        <label for="ceratopsians"> Ceratopsians</label>
+        <input type="checkbox" id="pachycephalosaurs" name="pachycephalosaurs" value="pachycephalosaurs">
+        <label for="pachycephalosaurs"> Pachycephalosaurs</label>
+      </nav>
+    </aside>
+    <section class="content">
+      <header>
+        <section>
+          <button><span class="material-symbols-outlined">menu</span></button>
+          <input type="text" placeholder="Search dinosaurs" name="search">
+          <button><span class="material-symbols-outlined">person_add</span></button>
+          <button><span class="material-symbols-outlined">calendar_month</span></button>
+          <button><span class="material-symbols-outlined">apps</span></button>
+        </section>
+        <section class="header-content">
+          <div class="title-and-subtitle">
+            <h1>Ambopteryx - The Bat-Winged Dinosaur</h1>
+            <p><span class="material-symbols-outlined">location_on</span> Lingyuan, China &#183 <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4">Visit Digsite</a></p>
+          </div>
+          <button>&#x25cf Extinct</button>
+          <button><span class="material-symbols-outlined">bookmark</span></button>
+          <button><span class="material-symbols-outlined">edit</span></button>
+          <button><span class="material-symbols-outlined">delete</span></button>
+        </section>
+        <nav class="content-nav">
+          <button>SUMMARY</button>
+          <button>TAXONOMY</button>
+          <button>HABITAT</button>
+          <button>FOSSILS</button>
+          <button>DISCOVERY</button>
+          <button>GALLERY</button>
+          <button>FAQ</button>
+        </nav>
+      </header>
+      <main>
+        <section class="charts">
+          <div class="circle">60%</div>
+          <div class="circle">30%</div>
+          <div class="circle">80%</div>
+          <div class="graph-container"></div>
+        </section>
+        <section>
+          <table></table>
+          <nav>
+            <button></button>
+            <button></button>
+            <button></button>
+            <section>
+              <p></p>
+              <div>
+                <input type="text" placeholder="hyperlink" name="hyperlink">
+                <button></button>
+              </div>
+              <div>
+                <input type="text" placeholder="script" name="hyperlink">
+                <button></button>
+              </div>
+              <div>
+                <input type="text" placeholder="email" name="hyperlink">
+              </div>
+            </section>
+          </nav>
+        </section>
+      </main>
     </section>
-  </main>
-</body>
+  </body>
 </html>
